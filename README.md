@@ -17,7 +17,7 @@
         <img src="https://img.shields.io/badge/LinkedIn-Jhon%20Arciniegas-blue?style=for-the-badge&logo=linkedin&labelColor=101010" alt="LinkedIn" />
       </a>
     </p>
-    <h3 align="left" style="color: #6c63ff;">🚀 Technologies</h3>
+    <h4 align="left" style="color: #6c63ff;">🚀 Technologies</h4>
     <div align="left">
       <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=101010" alt="HTML" />
       <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=101010" alt="CSS" />
