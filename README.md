@@ -1,6 +1,6 @@
 <div style="background-color: #1a1a1a; padding: 20px; border-radius: 10px;">
   <div style="float: left; width: 50%; padding-right: 1%;">
-    <h2 align="left" style="color: #6c63ff;">💻 FullStack Developer</h2>
+    <h3 align="left" style="color: #6c63ff;">💻 FullStack Developer</h3>
     <div align="left">
       <ul style="list-style-type: none; color: #b3b3b3; padding-left: 0;">
         <li>Passionate about data, artificial intelligence, and efficient programming.</li>
@@ -8,7 +8,7 @@
         <li>Linux enthusiast who loves customizing the operating system.</li>
       </ul>
     </div>
-    <h3 align="left" style="color: #6c63ff;">💼 Check out my work and connect with me</h3>
+    <h4 align="left" style="color: #6c63ff;">💼 Check out my work and connect with me</h4>
     <p align="left">
       <a href="https://jhon-arciniegas.vercel.app" target="_blank">
         <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=appveyor&labelColor=101010" alt="Portfolio" />
@@ -36,7 +36,7 @@
   </div>
 
   <div style="float: right; width: 50%; padding-left: 1%">
-    <h3 align="left" style="color: #6c63ff;">🛠️ Tools</h3>
+    <h4 align="left" style="color: #6c63ff;">🛠️ Tools</h4>
     <div align="left">
       <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=101010" alt="Git" />
       <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=101010" alt="AWS" />
@@ -44,7 +44,7 @@
       <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010" alt="npm" />
       <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=101010" alt="VSCode" />
     </div>
-    <h3 align="left" style="color: #6c63ff;">🔝 Top languages</h3>
+    <h4 align="left" style="color: #6c63ff;">🔝 Top languages</h4>
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arcibyte&theme=github&exclude=CSS,ShaderLab" />
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arcibyte&theme=github&exclude=CSS,ShaderLab" />
   </div>
