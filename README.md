@@ -41,8 +41,8 @@
       <img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=101010" alt="VSCode" />
     </div>
     <h4 align="left" style="color: #6c63ff;">🔝 Top languages</h4>
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arcibyte&theme=github&exclude=CSS,ShaderLab" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arcibyte&theme=github&exclude=CSS,ShaderLab" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arcibyte&theme=gotham&exclude=CSS,ShaderLab" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arcibyte&theme=gotham&exclude=CSS,ShaderLab" />
   </div>
 
   <div style="clear: both"></div>
