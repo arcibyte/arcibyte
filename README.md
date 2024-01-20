@@ -16,8 +16,8 @@
 </div>
     <br/>
     <div style="float: right; width: 50%; padding-left: 1%;">
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=arcibyte&theme=city_lights&exclude=CSS,ShaderLab" />
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=arcibyte&theme=city_lights&exclude=CSS,ShaderLab" />
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jhonarciniegas&theme=city_lights&exclude=CSS,ShaderLab" />
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=jhonarciniegas&theme=city_lights&exclude=CSS,ShaderLab" />
     </div>
     <div style="clear: both;"></div>
 </div>
