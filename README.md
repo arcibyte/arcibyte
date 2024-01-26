@@ -1,5 +1,4 @@
 <div>
-    <h2>Web developer and Linux enthusiast</h2>
      <img src="https://media.giphy.com/media/Er3QVX48nt5ok/giphy.gif" alt="Web Developer Gif" />
     <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-right: -4px;">
     <h3>Stack</h3>
