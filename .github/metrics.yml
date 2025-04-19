@@ -1,4 +1,3 @@
-
 name: Metrics
 on:
   schedule: [{cron: "0 16 * * *"}]
@@ -10,6 +9,7 @@ jobs:
     steps:
 
       - name: 🦑 General
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
@@ -21,12 +21,12 @@ jobs:
           plugin_introduction_title: yes
           plugin_calendar: yes
           plugin_repositories: yes
-          plugin_repositories_featured: REPO1, REPO2
+          plugin_repositories_featured: personal_website, spacecraft
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_categories: programming
           plugin_languages_colors: github
-          plugin_languages_ignored: html, tex, less, dockerfile, makefile
+          plugin_languages_ignored: cmake, html, shell, css, text
           plugin_languages_limit: 3
           plugin_languages_recent_categories: programming
           plugin_languages_recent_days: 14
@@ -50,7 +50,7 @@ jobs:
           plugin_music_limit: 6
           plugin_music_mode: recent
           plugin_music_played_at: yes
-          plugin_music_playlist: https://open.spotify.com/playlist/31fZhh91k3jMXx6ev7z1Bc
+          plugin_music_playlist: https://open.spotify.com/embed/playlist/31fZhh91k3jMXx6ev7z1Bc
           plugin_music_provider: spotify
           plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
           plugin_music_time_range: short
