@@ -11,7 +11,6 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-
       - name: General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -50,6 +49,7 @@ jobs:
           base: ""
           base_hireable: yes
           config_timezone: America/Bogota
+
           plugin_music: yes
           plugin_music_limit: 6
           plugin_music_mode: recent
@@ -60,17 +60,8 @@ jobs:
           plugin_music_time_range: short
           plugin_music_top_type: tracks
           plugin_music_user: w9416gzqhulhpo10widtnjsi9
+
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://arcibyte.vercel.app
-
-      - name: Commit and Push SVGs
-        run: |
-          git config --global user.name "arcibyte"
-          git config --global user.email "arcibyte@gmail.com"
-          git add general.svg medias.svg
-          git commit -m "⚡ Automate image updates"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
