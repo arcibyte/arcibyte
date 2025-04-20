@@ -2,14 +2,16 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 21 * * *"  
-  workflow_dispatch: 
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-    
+
       - name: General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -71,4 +73,4 @@ jobs:
           git commit -m "⚡ Automate image updates"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
