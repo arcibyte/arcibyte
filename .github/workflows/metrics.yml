@@ -1,14 +1,16 @@
 name: Metrics
+
 on:
-  schedule: [{cron: "0 16 * * *"}]
-  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * *"  
+  workflow_dispatch: 
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-
-      - name: 🦑 General
+    
+      - name: General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
@@ -38,7 +40,7 @@ jobs:
           plugin_topics_mode: icons
           plugin_topics_sort: stars
 
-      - name: 🦑 Medias
+      - name: Medias
         uses: lowlighter/metrics@latest
         with:
           filename: medias.svg
@@ -60,3 +62,13 @@ jobs:
           plugin_pagespeed_screenshot: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://arcibyte.vercel.app
+
+      - name: Commit and Push SVGs
+        run: |
+          git config --global user.name "arcibyte"
+          git config --global user.email "arcibyte@gmail.com"
+          git add general.svg medias.svg
+          git commit -m "⚡ Automate image updates"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
