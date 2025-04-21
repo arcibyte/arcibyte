@@ -45,21 +45,10 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: medias.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: NOT_NEEDED
           base: ""
           base_hireable: yes
           config_timezone: America/Bogota
-
-          plugin_music: yes
-          plugin_music_limit: 6
-          plugin_music_mode: recent
-          plugin_music_played_at: yes
-          plugin_music_playlist: https://open.spotify.com/embed/playlist/31fZhh91k3jMXx6ev7z1Bc
-          plugin_music_provider: spotify
-          plugin_music_token: "${{ secrets.CLIENT_ID }}, ${{ secrets.CLIENT_SECRET }}, ${{ secrets.REFRESH_TOKEN }}"
-          plugin_music_time_range: short
-          plugin_music_top_type: tracks
-          plugin_music_user: w9416gzqhulhpo10widtnjsi9
 
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
