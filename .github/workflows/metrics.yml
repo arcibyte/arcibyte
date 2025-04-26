@@ -8,14 +8,16 @@ on:
     branches: ["main"]
 
 jobs:
-  general:
+  github-metrics:
     runs-on: ubuntu-latest
     steps:
       - name: General
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: header, activity, community, repositories
           base_hireable: yes
           config_timezone: America/Bogota
@@ -36,18 +38,16 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           plugin_topics: yes
-          plugin_topics_limit: 15
-          plugin_topics_mode: labels
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
           plugin_topics_sort: stars
 
-  medias:
-    runs-on: ubuntu-latest
-    steps:
       - name: Medias
         uses: lowlighter/metrics@latest
         with:
           filename: medias.svg
           token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           base_hireable: yes
           config_timezone: America/Bogota
