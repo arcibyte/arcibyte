@@ -24,6 +24,11 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/Bogota
+          plugin_code: yes
+          plugin_code_days: 3
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_visibility: public
           plugin_habits: yes
           plugin_habits_charts_type: classic
           plugin_habits_days: 14
@@ -31,10 +36,6 @@ jobs:
           plugin_habits_from: 200
           plugin_habits_languages_limit: 8
           plugin_habits_languages_threshold: 0%
-          plugin_topics: yes
-          plugin_topics_limit: 15
-          plugin_topics_mode: starred
-          plugin_topics_sort: stars
           base_hireable: yes
           plugin_introduction: yes
           plugin_introduction_title: yes
