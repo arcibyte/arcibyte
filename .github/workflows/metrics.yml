@@ -8,12 +8,13 @@ on:
     branches: ["main"]
 
 jobs:
-  general:
+  github-metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: General
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
