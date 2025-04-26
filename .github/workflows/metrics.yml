@@ -8,11 +8,10 @@ on:
     branches: ["main"]
 
 jobs:
-  github-metrics:
+  general:
     runs-on: ubuntu-latest
     steps:
       - name: General
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: general.svg
@@ -37,10 +36,13 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           plugin_topics: yes
-          plugin_topics_limit: 12
-          plugin_topics_mode: icons
+          plugin_topics_limit: 15
+          plugin_topics_mode: labels
           plugin_topics_sort: stars
 
+  medias:
+    runs-on: ubuntu-latest
+    steps:
       - name: Medias
         uses: lowlighter/metrics@latest
         with:
@@ -49,7 +51,6 @@ jobs:
           base: ""
           base_hireable: yes
           config_timezone: America/Bogota
-
           plugin_pagespeed: yes
           plugin_pagespeed_screenshot: yes
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
