@@ -1,4 +1,4 @@
-<img width="200" alt="none" src="https://count.getloli.com/get/@:arcibyte?theme=asoul"/>
+<img width="200" alt="none" src="https://count.getloli.com/get/@:arcibyte?theme=minecraft"/>
 <table>
   <tbody>
     <tr>
