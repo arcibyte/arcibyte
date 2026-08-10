@@ -1,9 +1,11 @@
+
+
 <img width="200" alt="none" src="https://count.getloli.com/get/@:arcibyte?theme=asoul"/>
 <table>
   <tbody>
     <tr>
       <td>
-        <img align="left" alt="none" src="/general.svg"/>
+        <img align="left" alt="GitHub Activity Metrics" src="/general.svg"/>
       </td>
       <td valign="top" style="position: relative;">
         <img align="right" alt="none" src="/medias.svg"/>
